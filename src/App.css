@@ -1,0 +1,68 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f7f7; /* Light background color */
+  width: 100%; /* Ensure the container spans the full viewport width */
+}
+
+.content {
+  width: 100%;
+  max-width: 800px; /* Limit content width */
+  padding: 0 20px; /* Add horizontal padding */
+  box-sizing: border-box; /* Include padding in content width */
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1; /* Let the input grow to take available space */
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background-color: #fff; /* White input background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.search-button {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.poster-container {
+  position: relative;
+  width: 100%; /* Ensure the poster container fills its parent width */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.poster-image {
+  width: 100%; /* Make the image fill its container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+

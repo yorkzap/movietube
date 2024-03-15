@@ -1,0 +1,29 @@
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    flex: 1;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    outline: none;
+    color: black;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+  }
+  
+  .loading-text {
+    margin-left: 10px;
+    color: #007bff;
+  }
+  

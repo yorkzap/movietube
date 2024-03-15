@@ -1,0 +1,74 @@
+.actor-books-container {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adding margin at the bottom */
+  }
+  
+  .actor-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px; /* Adding margin between the cards */
+  }
+  
+  .actor-book {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adding margin at the bottom of each card */
+  }
+  
+  .actor-book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .actor-book-details-item {
+    margin-bottom: 5px;
+  }
+  
+  /* Updated ActorBooks.css */
+
+.actor-books-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .actor-books-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .actor-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .actor-book {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .actor-book:hover {
+    transform: translateY(-5px);
+  }
+  
+  .actor-book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .actor-book-details-item {
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
