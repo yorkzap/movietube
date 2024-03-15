@@ -1,7 +1,7 @@
 ## Credits
 Akaal
 
-# Movie and Actor Book Search App
+# Movie Search App with support for books related to cast
 
 This React app allows users to search for movies and view details about them, as well as explore books related to actors. The app features a user-friendly interface with search functionality, loading indicators, and integration with external APIs for fetching movie and book data.
 
@@ -27,7 +27,7 @@ This React app allows users to search for movies and view details about them, as
 
 
 `git clone`
-`cd lab10`
+`cd movietube`
 
 2. Install Dependencies
 `npm install`
