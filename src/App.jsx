@@ -8,6 +8,7 @@ function App() {
   const [query, setQuery] = useState('');
   const [movieData, setMovieData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const fetchMovieData = async () => {
     setIsLoading(true);
@@ -36,14 +37,18 @@ function App() {
           };
   
           setMovieData(movieDetails);
+          setErrorMessage('');
         } else {
           // No movie found
           setMovieData(null);
+          setErrorMessage('No movie found, please search for another movie.');
+          setQuery(''); // Clear the input field
         }
         setIsLoading(false);
       }, 1000); // Simulated loading time of 1000ms
     } catch (error) {
       console.error('Error fetching data:', error);
+      setErrorMessage('Error fetching data. Please try again later.');
       setIsLoading(false);
     }
   };
@@ -69,6 +74,7 @@ function App() {
           handleInputChange={handleInputChange}
           handleSubmit={handleSubmit}
         />
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
         {isLoading ? (
           <LoadingIndicator />
         ) : (
