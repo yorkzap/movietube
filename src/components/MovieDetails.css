@@ -1,44 +1,60 @@
-/* MovieDetails.css */
+.movie-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
 
 .movie-details-container {
-    display: flex;
-    align-items: flex-start; /* Align items at the start */
-    padding: 20px;
-    background-color: #f9f9f9; /* Light background color */
-    border-radius: 12px; /* Add rounded corners */
-  }
-  
-  .poster-container {
-    margin-right: 20px; /* Add some space between poster and details */
-  }
-  
-  .poster-image {
-    max-width: 200px; /* Limit the maximum width of the poster */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Add rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-  }
-  
-  .details {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Apple's default font */
-    max-width: 400px; /* Limit the width of the details */
-  }
-  
-  .title {
-    margin-top: 0; /* Remove default margin */
-    margin-bottom: 10px; /* Add some space below title */
-    font-size: 24px; /* Larger font size for title */
-    color: #333; /* Darker text color */
-  }
-  
-  p {
-    margin-top: 0; /* Remove default margin for paragraphs */
-    margin-bottom: 10px; /* Add some space below paragraphs */
-    color: #666; /* Slightly darker text color */
-  }
-  
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  margin-bottom: 20px; /* Add some space before the streaming availability */
+  width: 100%;
+  box-sizing: border-box;
+}
 
-  
-.cast-list-container > * {
-    flex-direction: row;
+.poster-container {
+  margin-right: 20px;
+}
+
+.poster-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  max-width: 400px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.cast-list-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Add space after the streaming availability */
+}
+
+.cast-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Spacing between cast member cards */
 }

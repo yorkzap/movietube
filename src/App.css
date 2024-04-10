@@ -6,15 +6,15 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f7f7f7; /* Light background color */
-  width: 100%; /* Ensure the container spans the full viewport width */
+  background-color: #f7f7f7;
+  width: 100%;
 }
 
 .content {
   width: 100%;
   max-width: 800px; /* Limit content width */
   padding: 0 20px; /* Add horizontal padding */
-  box-sizing: border-box; /* Include padding in content width */
+  box-sizing: border-box;
 }
 
 .search-form {
@@ -33,7 +33,7 @@
   border-radius: 20px;
   outline: none;
   background-color: #fff; /* White input background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-button {
@@ -54,15 +54,15 @@
 
 .poster-container {
   position: relative;
-  width: 100%; /* Ensure the poster container fills its parent width */
-  overflow: hidden; /* Hide any overflowing content */
+  width: 100%;
+  overflow: hidden; /* Hide overflowing content */
 }
 
 .poster-image {
-  width: 100%; /* Make the image fill its container width */
+  width: 100%; /* Make the image fill its container's width */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
