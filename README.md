@@ -51,3 +51,15 @@ This React app allows users to search for movies, view details about them, explo
 - **TMDB API:** Fetches movie details, including cast information.
 - **Streaming Availability API:** Identifies available streaming platforms for movies.
 - **Open Library API:** Retrieves book data associated with actors.
+
+## Back Story
+The idea for this project stemmed from a wish to create a simple SPA site that indexes movie data. The layout was inspired by a long-gone minimalist website that shut down in late 2000's that provided streaming links for movies.
+
+## Sources
+Documentation from RapidAPI, TMDB and Open Library API was used during development.
+
+## Further Content
+Given more time, it would be nice to add authentication and a "favorites" functionality. Based on this, I would like to to develop a sophisticated algorithm for suggesting movies based on user favorites, potentially utilizing the OpenAI API. Netflix's suggestions are way off usually. Creating such an algorithm would require a lot of testing and time and user feedback so I have tried laying down the foundation for it.
+
+## General Feedback
+I would like to express my thanks for the help and insights provided throughout the course. Pointing students to valuable resources and courses that are not necessarily related to front-end development throughout the course was especially appreciated. I gained a sense of the bigger picture and will be utilizing the summer to study those. Even though the journey in class has come to an end, I hope to continue to learn by watching.
