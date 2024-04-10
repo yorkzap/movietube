@@ -1,0 +1,45 @@
+.streaming-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.streaming-title {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+.streaming-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.streaming-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.streaming-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.streaming-loading, .streaming-not-available {
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .streaming-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
