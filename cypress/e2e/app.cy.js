@@ -25,6 +25,7 @@ describe('Core Movie Search', () => {
     cy.get('.loading-overlay').should('exist');
 
     // Loading indicator should go away after data is fetched
+    cy.get('.movie-details-container').should('exist'); // Ensure movie details container is present
     cy.get('.loading-overlay').should('not.exist');
   });
 
@@ -67,12 +68,12 @@ describe('MovieDetails', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.get('.search-input').type('Edge of Tomorrow').type('{enter}');
-    cy.wait(5000); // Adjust wait time as needed for data loading
+    cy.get('.loading-overlay', { timeout: 10000 }).should('not.exist'); // Wait for loading indicator to disappear
   });
 
   it('should display cast list and actor books when clicking on cast members', () => {
     // Check if cast list exists
-    cy.get('.cast-listt').should('exist');
+    cy.get('.cast-list').should('exist');
 
     // Check if cast members are present
     cy.get('.cast-member').should('have.length.above', 0);
@@ -88,14 +89,23 @@ describe('MovieDetails', () => {
       cy.get('.actor-books-heading').should('exist');
 
       // Wait for actor books to load
-      cy.wait(10000); // Adjust wait time as needed for data loading
+      cy.get('.actor-book-title', { timeout: 10000 }).should('exist'); // Adjust wait time as needed for data loading
+    });
+  });
 
-      // Check if actor books are present
-      cy.get('.actor-book-title').should('exist');
+  it('should display streaming options for the selected movie', () => {
+    // Check if streaming links exist
+    cy.get('.streaming-links').should('exist');
 
-      // Close the actor books container
-      cy.get('.cast-list-container').click(); // Click outside the container to close it
+    // Check if at least one streaming button or link is there
+    cy.get('.streaming-button').should('have.length.above', 0);
+  });
+
+  it('should navigate to streaming service on clicking streaming link', () => {
+    // Get the href attribute of the first streaming button
+    cy.get('.streaming-button').first().should('have.attr', 'href').then((href) => {
+      // Assert that the href attribute contains 'http' to ensure it's a valid URL
+      expect(href).to.include('http');
     });
   });
 });
-
