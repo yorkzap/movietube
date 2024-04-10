@@ -8,7 +8,7 @@ const StreamingAvailability = ({ movieId }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const apiKey = '5fd87c2b5fmsh0f2cc898ef94fa1p1d8334jsnb311c44431f8';
+      const apiKey = 'cfb6906555mshd87073f7db79da5p1dc4e8jsn17d35d8de148';
       const host = 'streaming-availability.p.rapidapi.com';
       const url = `https://streaming-availability.p.rapidapi.com/get`;
 
