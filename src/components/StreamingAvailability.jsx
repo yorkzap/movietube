@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import LoadingIndicator from './LoadingIndicator'; // Import the LoadingIndicator component
 import './StreamingAvailability.css';
 
 const StreamingAvailability = ({ movieId }) => {
@@ -36,7 +37,7 @@ const StreamingAvailability = ({ movieId }) => {
   }, [movieId]);
 
   if (loading) {
-    return <p className="streaming-loading">Fetching streaming availability...</p>;
+    return <LoadingIndicator />; // Render the LoadingIndicator component
   }
 
   if (!streamingInfo || Object.keys(streamingInfo).length === 0) {
